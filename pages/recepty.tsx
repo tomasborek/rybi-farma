@@ -48,9 +48,9 @@ const Recipe = ({
   duration,
   name,
 }: {
-  date: String;
-  duration: Number;
-  name: String;
+  date: string;
+  duration: number;
+  name: string;
 }) => (
   <div className="max-w-1/4 h-auto rounded-lg overflow-hidden bg-white shadow-md cursor-pointer">
     <img src="/img/placeholder-food.jpeg" className="w-full" />
