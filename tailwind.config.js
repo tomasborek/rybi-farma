@@ -4,10 +4,17 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors: {
-      text: "#333",
+    fontFamily: {
+      sans: ['"Exo 2"', "sans-serif"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        text: "#333",
+        main: "#368C79",
+        textLight: "#888888",
+        textLighter: "#BBBBBB",
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
