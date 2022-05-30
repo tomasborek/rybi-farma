@@ -21,7 +21,7 @@ const Recipes = ({ recipes }) => {
           {recipes.length ? (
             <section>
               <MotionDiv>
-                <Link href={`/recept/${recipes[0].fields.slug}`}>
+                <Link href={`/recepty/${recipes[0].fields.slug}`}>
                   <div className="w-full cursor-pointer relative rounded-lg overflow-hidden h-[250px] md:h-[400px] flex flex-col justify-center my-8">
                     <img
                       src={recipes[0].fields.image.fields.file.url}
