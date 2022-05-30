@@ -7,7 +7,7 @@ type Props = {
 };
 
 const Layout = ({ children, noHeader = false }: Props) => (
-  <div className="min-h-screen text-text">
+  <div className="min-h-screen text-text bg-bg overflow-x-hidden">
     {!noHeader && <Header />}
     {children}
   </div>
