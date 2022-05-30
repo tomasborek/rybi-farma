@@ -93,7 +93,7 @@ const Farm = ({ content, jobs }) => {
               />
             </div>
           </div>
-          {jobs && (
+          {jobs.length ? (
             <MotionDiv>
               <h2 className="h2 mb-4">Pracovní příležitosti</h2>
               <div className="flex flex-col items-center sm:items-start sm:flex-row w-full  gap-4 flex-wrap">
@@ -109,6 +109,8 @@ const Farm = ({ content, jobs }) => {
                 })}
               </div>
             </MotionDiv>
+          ) : (
+            ""
           )}
         </div>
         <Footer />
