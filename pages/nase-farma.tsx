@@ -149,7 +149,7 @@ const Section = ({
               <img
                 src={img.fields.file.url}
                 alt={img.fields.title}
-                className="rounded-lg w-full h-full object-cover"
+                className="rounded-lg w-full h-full object-cover mt-4 md:mt-0"
               />
             </div>
           )}
@@ -173,7 +173,7 @@ const FactBox = ({ fact, data, icon }) => {
 
 const Job = ({ title, link, icon }) => {
   return (
-    <div className="w-[250px] border-t-4 border-main bg-white py-8 px-4 shadow-lg  cursor-pointer">
+    <div className="w-full md:w-[250px] border-t-4 border-main bg-white py-8 px-4 shadow-lg  cursor-pointer">
       <Link
         href={link.includes("https://") ? link : "https://" + link}
         passHref
