@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex justify-center mb-4">
           <Logo width={80} white />
         </div>
-        <div className="flex">
+        <div className="flex flex-col items-center md:flex-row md:items-start space-y-4 md:space-y-0 space-x-0 md:space-x-4">
           <FooterSection heading={"O rybí zahradě"}>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero ea
@@ -34,10 +34,10 @@ const Footer = () => {
             </ul>
           </FooterSection>
           <FooterSection heading={"Kontakt"} last>
-            <p className="text-right">
+            <p className="text-center md:text-right">
               <b>Aqaponia s.r.o</b>
             </p>
-            <p className="mb-4 text-right">
+            <p className="mb-4 text-center md:text-right">
               Lážovice 52 <br /> 257 24
             </p>
             <div className="flex items-center  mb-2">
@@ -55,7 +55,7 @@ const Footer = () => {
           </FooterSection>
         </div>
       </div>
-      <div className="flex justify-center py-2 text-white font-extralight">
+      <div className="flex justify-center py-4 md:py-2 text-white font-extralight">
         <p>Rybí zahrada 2022 &copy; Všechna práva vyhrazena</p>
       </div>
     </footer>
@@ -74,9 +74,13 @@ const FooterSection = ({
   last?: boolean;
 }) => {
   return (
-    <div className={`flex-[1] text-white ${last && "flex flex-col items-end"}`}>
+    <div
+      className={`flex-[1] text-white text-center md:text-left ${
+        last && "flex flex-col items-center md:items-end"
+      }`}
+    >
       <h3
-        className={`heading mb-4 ${middle && "text-center"} ${
+        className={`heading mb-4 ${middle && "md:text-center"} ${
           last && "text-right"
         }`}
       >
