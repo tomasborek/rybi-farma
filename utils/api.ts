@@ -1,7 +1,9 @@
 const contentful = require("contentful");
+const dotenv = require("dotenv");
+dotenv.config();
 const client = contentful.createClient({
   space: process.env.SPACE_ID,
-  accessToken: "sGFC5M_ReXi_xmqpKxhoCvpN1EXAxnc-gQCIgig0kCU",
+  accessToken: process.env.ACCESS_TOKEN,
 });
 
 export const getRecipes = async (order = "-fields.date") => {
