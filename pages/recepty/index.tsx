@@ -51,7 +51,7 @@ const Recipes = ({ recipes }) => {
           <section>
             <MotionDiv>
               <h2 className="h2 mb-4">Nejnovější recepty</h2>
-              <div className="sm:grid sm:grid-cols-2 sm:gap-4 md:flex items-stretch">
+              <div className="space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-4 md:flex items-stretch">
                 {recipes?.map((recipe, index) => (
                   <>
                     {index < 4 && (
@@ -79,7 +79,7 @@ const Recipes = ({ recipes }) => {
           <section>
             <MotionDiv>
               <h2 className="h2 mb-4">Recepty</h2>
-              <div className="sm:grid sm:grid-cols-2 sm:gap-4 md:flex items-stretch">
+              <div className="space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-4 md:flex items-stretch">
                 {recipes.map((recipe, index) => (
                   <>
                     {index > 3 && (
