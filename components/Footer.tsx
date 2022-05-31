@@ -12,9 +12,10 @@ const Footer = () => {
         <div className="flex flex-col items-center md:flex-row md:items-start space-y-4 md:space-y-0 space-x-0 md:space-x-4">
           <FooterSection heading={"O rybí zahradě"}>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero ea
-              aliquid voluptatum veritatis reiciendis. Quae inventore cupiditate
-              neque odit ullam.
+              Jsme profíci na pěstování zeleniny a chov ryb. Dopřáváme jim
+              nadstandartní péči v souladu s přírodou. Díky aquaponickému
+              farmaření u nás nakoupíte čerstvé a lokální produkty v každém
+              ročním období.
             </p>
           </FooterSection>
           <FooterSection middle heading={"Navigace"}>
