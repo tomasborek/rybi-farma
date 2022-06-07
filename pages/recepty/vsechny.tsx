@@ -18,7 +18,7 @@ const AllRecipes = ({ recipes }) => {
               duration={recipe.fields.duration}
               title={recipe.fields.name}
               img={recipe.fields.image}
-              link={`/recept/${recipe.fields.slug}`}
+              link={`/recepty/${recipe.fields.slug}`}
               alternative
             />
           ))}

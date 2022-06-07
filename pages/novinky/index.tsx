@@ -46,7 +46,7 @@ const News = ({ blogPosts }) => {
               <div className="sm:grid sm:grid-cols-2 sm:gap-4 md:flex items-stretch">
                 {blogPosts.map((post, index) => (
                   <>
-                    {index > 3 && (
+                    {index > 3 && index < 8 && (
                       <div className="w-full md:w-1/4">
                         <BlogPost
                           title={post.fields.title}

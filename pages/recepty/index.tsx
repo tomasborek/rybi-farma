@@ -82,7 +82,7 @@ const Recipes = ({ recipes }) => {
               <div className="space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-4 md:flex items-stretch">
                 {recipes.map((recipe, index) => (
                   <>
-                    {index > 3 && (
+                    {index > 3 && index < 8 && (
                       <div className="w-full md:w-1/4">
                         <BlogPost
                           date={recipe.fields.date}
