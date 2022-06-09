@@ -30,7 +30,9 @@ const Footer = () => {
                 <Link href="/recepty">Recepty</Link>
               </li>
               <li>
-                <Link href="/nakupy">Nákupy</Link>
+                <Link href="https://rybizahrada.cz" passHref>
+                  <a target={"_blank"}>Nákupy</a>
+                </Link>
               </li>
             </ul>
           </FooterSection>
