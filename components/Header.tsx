@@ -15,7 +15,7 @@ const Header = () => {
       <div className="cursor-pointer -order-1 md:order-none">
         <Link href="/">
           <div>
-            <Logo width={80} />
+            <Logo width={70} />
           </div>
         </Link>
       </div>
